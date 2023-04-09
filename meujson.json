@@ -1,0 +1,24 @@
+
+
+
+
+{
+
+    "nome": "Maria",
+    "idade": 25,
+    "altura": 1.85, 
+    "aluno": true,
+    "formaturas": [2006, 2013, 2017],
+    "cursos": ["técnico", "Graduação ", "Mestrado"],
+    "cnh" : { "numero": "123456", "categoria": "AB"},
+    "filhos": [
+        {"nome": "José", "idade": 10},
+        { "nome": "Julia", "idade": 14}
+    ],
+
+    "netos": [
+        {"nome": "Joelma", "idade": 13},
+        { "nome": "Manoel", "idade": 19}
+    ],
+    "endereco " : null
+}

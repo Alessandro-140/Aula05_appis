@@ -1,0 +1,95 @@
+Verificar no audio da aula 05 no dia 04-03-2023
+aos 58 minutos como executar o código em json.
+
+Aos 59 minutos indica a extensão json viewer, 
+que vou pesquisar em google, e ao selecionar a mesma 
+o proprio chrome identifica e pergunta se desejo instalar.
+==============================================
+
+Para buscar o arquivo.json
+http://127.0.0.1:5500/meujson.json
+
+result set:
+
+{
+"nome": "Maria",
+"idade": 25,
+"altura": 1.85,
+"aluno": true,
+"formaturas": [
+2006,
+2013,
+2017
+],
+"cursos": [
+"técnico",
+"Graduação ",
+"Mestrado"
+],
+"cnh": {
+"numero": "123456",
+"categoria": "AB"
+},
+"filhos": [
+{
+"nome": "José",
+"idade": 10
+},
+{
+"nome": "Julia",
+"idade": 14
+}
+],
+"netos": [
+{
+"nome": "Joelma",
+"idade": 13
+},
+{
+"nome": "Manoel",
+"idade": 19
+}
+],
+"endereco ": null
+}
+// 20230407201044
+// http://127.0.0.1:5500/meujson.json
+
+============================================================================
+http://127.0.0.1:5500/index.html
+
+Aqui foi feito uma reformulação para que seja impresso de forma mais apresentavel no html.
+
+{"nome":"Maria","idade":25,"altura":1.85,"aluno":true,"formaturas":[2006,2013,2017],"cursos":["técnico","Graduação ","Mestrado"],"cnh":{"numero":"123456","categoria":"AB"},"filhos":[{"nome":"José","idade":10},{"nome":"Julia","idade":14}],"netos":[{"nome":"Joelma","idade":10},{"nome":"Manoel","idade":14}],"endereco":null}
+Ler JSON
+Nome: Maria
+Idade: 25
+Altura: 1.85
+Número da CNH: 123456
+Categoria da CNH: AB
+Filhos:
+Nome: José
+- Idade: 10
+Nome: Julia
+- Idade: 14
+Netos:
+Nome: Joelma
+- Idade: 13
+Nome: Manoel
+- Idade: 19
+
+===================================================================
+
+Para usar o XAMPP eu vou em C, APACHE se o XAMPP não abrir, em conf, e abro o 
+arquivo httpd.conf e abro com o notpadd ++ = bloco de notas, vou na linha 60 
+onde está escrito listen e coloco 8080.
+
+=========================================================
+Para usar o XAMPP vou em INICIAR e seleciono XAMPP, clico em XAMPP control panel e em START,
+em admin.
+
+===================================================================
+Para listar os dados no git bash é assim:
+$ git config --list
+
+
