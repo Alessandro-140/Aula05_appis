@@ -1,0 +1,87 @@
+
+Site para ver os passos destes processos abaixo:
+https://www.google.com.br/search?q=como+enviar+a+altera%C3%A7%C3%A3o+para+o+github+no+codigo+no+visual+studio&sxsrf=APwXEdfsrJ7Go-4IjmAU1_97_SiacNSlqA%3A1681004389296&ei=ZRcyZOvdEfba1sQPgISBsA8&ved=0ahUKEwirpPWr1Zv-AhV2rZUCHQBCAPYQ4dUDCBA&uact=5&oq=como+enviar+a+altera%C3%A7%C3%A3o+para+o+github+no+codigo+no+visual+studio&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzoKCAAQRxDWBBCwAzoECCMQJzoFCAAQogQ6CAghEKABEMMEOgQIIRAKSgQIQRgAUOYOWNRTYLhdaAJwAXgAgAG9AYgBlRKSAQQwLjE1mAEAoAEByAEIwAEB&sclient=gws-wiz-serp#fpstate=ive&vld=cid:67b5aa6c,vid:peGUkhXD3Vw
+
+// IMPORTANTE:
+// OBS: Criação de um repository no github e associação com visual studio code.
+1º passo 
+Vou criar 1 repository no github e após criado o repository vou copiar o link, 
+vou criar uma pasta em algum dos diretórios locais da minha máquina no caso criei na área de trabalho,
+ vou abrir o visual studio code e vou associar a pasta criada anteriormente no diretório da 
+ área de trabalho da minha máquina ao visual studio code, vou fazer a escolha da pasta no 
+ visual studio code indo no open folder e selecionando a pasta.
+
+ 2º Passo 
+ Ao clicar no Source Control eu vou inicializar o repository que é igual que o Uso do git bash e
+ fazendo o "git init" e será criada uma branch master no roda pé, e assim sendo a pasta que eu criei
+  um repositório, agora tenho que associar está pasta ao repositório que criei no github e pra 
+  isso vou nos 3 pontinhos em cima a direita, vou na opção show git output e escolho o botão de 
+  terminal e vai abrir o terminal e vou digitar: git remote add origin e colo o caminho
+  que é o  link do github, assim estamos associando o meu repositório local ao remoto do github.
+
+  3º Passo 
+  Vou criar um arquivo chamado index.html, vou salvar o arquivo na pasta dando um save, 
+  e vou verificar um "U" maisculo que está em "Untracked" significa que não está associado
+  ao repositório do github, então associa-lo fazendo o commit desta forma: vou no V que é 
+  o commit, que é o mesmo que eu faça um git add e git commit ao mesmo tempo e escrevo 
+  uma mensagem por que abre um campo ao clicar em commit no V e já mandou para a nuvem
+  que fica no roda pé a esquerda e então clico na nuvem para publicar as alterações, 
+  e vou no repositório do github e verei a pasta criada, e se eu por a estrutura 
+  do html vai surgir um "M" maisculo eu tenho que fazer o mesmo processo de commit, por que o
+  arquivo já foi commitado mas agora foi "modificado".
+  para que seja transferida para o repositório do github.
+
+
+
+// Via terminal do VS x CODE, MAS NÂO ESTÁ CORRETO
+
+Initialized empty Git repository in C:/Users/Usuario/Documents/Aula05/.git/
+PS C:\Users\Usuario\Documents\Aula05> git config user.name "Alessandro Santos"
+PS C:\Users\Usuario\Documents\Aula05> git config user.email "asantossantos140@gmail.com"
+PS C:\Users\Usuario\Documents\Aula05> git add .
+PS C:\Users\Usuario\Documents\Aula05> git commit -am "Segundo commit"
+[master (root-commit) f28cf9b] Segundo commit
+ 4 files changed, 220 insertions(+)
+ create mode 100644 Comentarios.txt
+ create mode 100644 meujson.json
+ create mode 100644 scripts.js
+PS C:\Users\Usuario\Documents\Aula05> git status
+On branch master
+nothing to commit, working tree clean
+PS C:\Users\Usuario\Documents\Aula05> git remote add origin https://github.com/Alessandro-140/Aula05_appis.git
+PS C:\Users\Usuario\Documents\Aula05> git push -u
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+// Abaixo como não tem a branch master eu utilizo o comando abaixo.
+    git push --set-upstream origin master
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+PS C:\Users\Usuario\Documents\Aula05>    git push --set-upstream origin master
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 6 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 2.84 KiB | 1.42 MiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Alessandro-140/Aula05_appis.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+/* OBS: quando aparecer na lupa de pesquisa = source control, por exemplo um número "1" ou qualquer outro,
+também vai aparecer um "U" maisculo e ao por o mouse sobre ele vai dizer assim "Untracked",
+quer dizer que não foi associado ao repository, mas ao clicar na lupa vai aparecer 
+um V de confirmação que é onde ao clicar vai ser como se tivesse feito um "git add" e um  "git commit",
+ e também posso escrever uma mensagem e acrescentará as mudanças no repository remote.
+ Vou do lado onde está escrito master no roda pé a esquerda e clico para dar um public changes
+ ele vai sincronizar e atualisar na pasta do github. */
+
+ /* OBS: se no mesmo  arquivo onde já foi "commitado" eu fizer uma alteração vai aparecer 
+ um "M" maisculo significa que foi "modificado" e então tenho submeter está alteração tenho que fazer mais 
+ um "commit", ou seja, vou clicar no V e vai abrir uma janela onde vou por um comentário na mensagem 
+ especificando o que foi alerado no código e etc..., e clico na rotula no roda pé a esquerda, onde 
+ terá o número 1 para fazer o commit, assim fazendo novamente o push no servidor do github e 
+ quando o número 1 desaparecer, quer dizer que está sincronizado e estará no servidor remoto do github
+ e se eu for no github e der um f5 ou ir no atualizar verei os commites, e se eu clicar na palavra 
+ commit verei as mensagens informando o que aconteceu. */
